@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<body>
+<img src="http://localhost:3000/images/logo_email.png"/>
+<p>
+Hello <%= @user.name %>,
+</p>
+<p>
+Thank you for signing up for <a href="http://localhost:3000">BasicApp</A>. In order to activate your new account you must click on the link below:
+</p>
+<p>
+http://localhost:3000/user/activate/<%= @activation.code %>
+</p>
+</body>
+</html>
+
