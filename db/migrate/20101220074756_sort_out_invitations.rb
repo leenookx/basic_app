@@ -2,8 +2,6 @@ class SortOutInvitations < ActiveRecord::Migration
   def self.up
     remove_column :users, :invitation_id
 
-    User.update_all("invitation_limit = 5") 
-
     add_column :invitations, :email, :string, :null => :false
   end
 
